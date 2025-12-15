@@ -27,3 +27,8 @@ A Django-based web application designed to monitor and manage cargo-related data
 2. Navigate to project folder
 3. Run: python manage.py runserver
 4. Open: http://127.0.0.1:8000/
+## Screenshots
+
+![Home Page](screenshots/home.png)
+![Login Page](screenshots/login.png)
+![Registration Page](screenshots/registration.png)

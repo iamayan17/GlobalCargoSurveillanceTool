@@ -1,0 +1,42 @@
+{%load static%}
+<html>
+<head>
+<title>FFTTF1</title>
+<link rel="icon" href="{%static 'BG1.jpg'%}">
+<link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+<nav>
+<div class="logo">
+<h1> FOREIGN FREIGHTERS TRACKING TOOL final1 </h1>
+<img src="{%static 'BG1.jpg'%}" width=150 height=150>
+</div>
+<div class="links">
+<a href="index">Home</a>
+<a href="freighter">freighters</a>
+<a href="">About</a>
+</div>
+</nav>
+<section class="content">
+<h3> About FOREIGN FREIHTERS </h3>
+<form action="SRA" method="POST">
+<h4>{{data}}</h4>
+{%csrf_token%}
+<p>Foreign Freighter Tracking Tool
+
+This enhanced webpage focuses on foreign freighters only. It includes:
+
+1. Freighter ID Input – Users enter a ship’s unique ID.
+
+
+2. Live Tracking Results – Displays ship location, speed, destination, and estimated arrival time.
+
+
+3. Interactive Map – Shows ship location using OpenStreetMap.
+
+
+4. API Integration (Future Upgrade) – Can be linked to real-time ship tracking services like MarineTraffic, VesselFinder, or AIS data.
+</p>
+</section>
+</body>
+</html>
